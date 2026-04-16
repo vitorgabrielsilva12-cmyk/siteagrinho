@@ -45,9 +45,7 @@
     </footer>
 
     <script src="script.js"></script>
-</body>
-</html>
-/* --- DESIGN SYSTEM & VARIABLES --- */
+</body>/* --- DESIGN SYSTEM & VARIABLES --- */
 :root {
     --primary-color: #1a2a6c;
     --secondary-color: #b21f1f;
@@ -124,11 +122,6 @@ header {
     transform: translateY(30px);
     transition: all 0.8s ease-out;
 }
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
 /* --- GESTÃO DE DADOS --- */
 const servicosData = [
     { titulo: "Ronda Ostensiva", desc: "Prevenção e patrulhamento urbano constante." },
@@ -180,3 +173,9 @@ document.addEventListener('DOMContentLoaded', () => {
     renderContent();
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 });
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+</html>
